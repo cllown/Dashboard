@@ -1,0 +1,110 @@
+extend head 
+
+block body
+    .wrapper
+        sidebar.sidebar 
+            button.sidebar__button.icon-menu
+                span
+            .sidebar__logo 
+                img(class="sidebar__logo", src="/../img/logo.svg")
+            ul.sidebar__nav.nav
+                li.nav__item._icon-dashboard
+                    a.nav__link(href="#") Dashboard
+                li.nav__item._icon-cube
+                    a.nav__link(href="#")._icon-arrow Product
+                li.nav__item._icon-user
+                    a.nav__link(href="#")._icon-arrow Customers
+                li.nav__item._icon-wallet
+                    a.nav__link(href="#")._icon-arrow Income
+                li.nav__item._icon-disscount
+                    a.nav__link(href="#")._icon-arrow Promote
+                li.nav__item._icon-help
+                    a.nav__link(href="#")._icon-arrow Help
+            .sidebar__account.account-sidebar
+                .account-sidebar__avatar 
+                    a.nav__image-link(href="#")
+                        img(src="/../img/avatar.png")
+                .account-sidebar__info
+                    a.account-sidebar__name Evano
+                    a.account-sidebar__job Project Manager
+        
+        main.page 
+            .page__greeting Hello Evano 👋🏼,
+            .page__customers-table.customers-table 
+                .customers-table__header
+                    .customers-table__info
+                        .customers-table__title All Customers 
+                        .customers-table__subtitle Active Members
+                    .customers-table__search._icon-search
+                        input(type="text", placeholder="Search")
+                table.customers-table__body.body-table 
+                    thead.body-table__thead 
+                        tr
+                            th Customer Name
+                            th Company
+                            th Phone Number
+                            th Email
+                            th Country
+                            th Status
+                    tbody.body-table__tbody 
+                        tr
+                            td Jane Cooper
+                            td Microsoft
+                            td (225) 555-0118
+                            td jane@microsoft.com
+                            td United States
+                            td.tbody__status Active
+                        tr
+                            td Floyd Miles
+                            td Yahoot
+                            td (205) 555-0100
+                            td floyd@yahoo.com
+                            td Kiribati
+                            td.tbody__status.tbody__status--inactive Inactive
+                        tr
+                            td Ronald Richards
+                            td Adobe
+                            td (302) 555-0107
+                            td ronald@adobe.com
+                            td Israel
+                            td.tbody__status.tbody__status--inactive Inactive
+                        tr
+                            td Marvin McKinney
+                            td Tesla
+                            td (252) 555-0126
+                            td marvin@tesla.com
+                            td Iran
+                            td.tbody__status Active
+                        tr
+                            td Jerome Bell
+                            td Google
+                            td (629) 555-0129
+                            td jerome@google.com
+                            td Réunion
+                            td.tbody__status Active
+                        tr
+                            td Kathryn Murphy
+                            td Microsoft
+                            td (406) 555-0120
+                            td kathryn@microsoft.com
+                            td Curaçao
+                            td.tbody__status Active
+                        tr
+                            td Jacob Jones
+                            td Yahoo
+                            td (208) 555-0112
+                            td jacob@yahoo.com
+                            td Brazil   
+                            td.tbody__status Active
+                        tr
+                            td Kristin Watson   
+                            td Facebook
+                            td (704) 555-0127
+                            td kristin@facebook.com
+                            td Åland Islands
+                            td.tbody__status.tbody__status--inactive Inactive
+                .body-table__tfoot.tfoot-table
+                        span.tfoot-table__counter Showing data 1 to 8 of  256K entries
+                        .tfoot-table__index-buttons.index-buttons
+
+        footer.footer
