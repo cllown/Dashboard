@@ -329,6 +329,13 @@ background-color: rgba(22, 192, 152, 0.38);
   color: rgb(223, 4, 4);
   border: rgb(223, 4, 4) 0.0625rem solid;
 }
+@media (max-width: 600px) {
+  .customers-table__body {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 .tfoot-table{
   margin-top: 29px;
