@@ -1,4 +1,6 @@
 const fs = require('fs');
 const pug = require('pug');
 
-fs.writeFileSync('index.html');
+const compiledHtml = pug.renderFile('index.pug');
+
+fs.writeFileSync('index.html', compiledHtml);
