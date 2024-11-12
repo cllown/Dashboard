@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:regular,500,600&display=swap");
 @font-face {
   font-family: '_icon-';
-  src: url('/fonts/icons.woff') format('woff'), 
-       url('/fonts/icons.ttf') format('truetype'); 
+  src: url('/Dashboard/fonts/icons.woff') format('woff'),
+       url('/Dashboard/fonts/icons.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
